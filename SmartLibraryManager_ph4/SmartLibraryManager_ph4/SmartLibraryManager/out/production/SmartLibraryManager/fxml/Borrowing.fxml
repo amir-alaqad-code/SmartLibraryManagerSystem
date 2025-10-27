@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="751.0" prefWidth="902.0" spacing="16" styleClass="app-root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BorrowingController">
+
+    <!-- stylesheet -->
+    <stylesheets>
+        <URL value="@../css/style.css" />
+    </stylesheets>
+
+    <children>
+
+        <!-- العنوان -->
+        <Label styleClass="title" text="Borrowing" />
+
+        <!-- بطاقة الإدخال -->
+        <GridPane hgap="12" styleClass="form" vgap="12">
+            <columnConstraints>
+                <ColumnConstraints minWidth="120" />
+                <ColumnConstraints hgrow="ALWAYS" />
+            </columnConstraints>
+            <children>
+                <Label text="Book:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ComboBox fx:id="bookBox" promptText="Select a book" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label text="Member:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <ComboBox fx:id="memberBox" promptText="Select a member" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Borrow Date:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <DatePicker fx:id="borrowDate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            </children>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <!-- أزرار الإجراءات -->
+        <HBox styleClass="actions">
+   <children>
+               <Button onAction="#handleBorrowBook" styleClass="btn btn-primary" text="Borrow" />
+               <Separator orientation="VERTICAL" />
+               <Button onAction="#handleBack" styleClass="btn btn-secondary" text="Back" />
+   </children>
+        </HBox>
+      <VBox prefHeight="409.0" prefWidth="868.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="868.0">
+               <children>
+                  <VBox prefHeight="360.0" prefWidth="761.0">
+                     <children>
+                  
+                                <!-- جدول السجلات -->
+                       <TableView fx:id="borrowsTable" maxWidth="-Infinity" prefHeight="360.0" prefWidth="622.0" styleClass="table-elevated">
+                      <columns>
+                          <TableColumn fx:id="colId" prefWidth="96.0" text="ID" />
+                          <TableColumn fx:id="colBook" prefWidth="111.0" text="Book" />
+                          <TableColumn fx:id="colMember" prefWidth="112.0" text="Member" />
+                          <TableColumn fx:id="colBorrowDate" prefWidth="132.0" text="BorrowDate" />
+                          <TableColumn fx:id="colReturnDate" prefWidth="135.0" text="ReturnDate" />
+                      </columns>
+                  </TableView>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="360.0" prefWidth="384.0" spacing="50.0">
+                     <children>
+                        <TextField fx:id="searchTextField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="41.0" prefWidth="194.0" promptText="Author's name or Book's title">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <DatePicker fx:id="searchDatePicker" prefHeight="41.0" prefWidth="155.0" />
+                        <ComboBox fx:id="searchComboBox" prefHeight="33.0" prefWidth="128.0" promptText="search by" style="-fx-background-color: white; -fx-border-color: #ccc; -fx-border-radius: 10;" />
+                        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonHandler" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: #bbb;" text="Search">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+
+    </children>
+
+    <padding><Insets bottom="50.0" left="50.0" right="50.0" top="50.0" /></padding>
+</VBox>

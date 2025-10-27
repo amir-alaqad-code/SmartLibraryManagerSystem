@@ -1,0 +1,296 @@
+
+
+.root, .app-root, .screen {
+  -fx-font-family: 'Segoe UI', Arial, sans-serif;
+  -fx-background-color: #f0f2f5;       /* خلفية فاتحة موحّدة */
+  -fx-text-fill: #1f2937;              /* نص افتراضي غامق مريح */
+}
+
+.screen { -fx-padding: 24; }
+
+/*  Titles  */
+.title {
+  -fx-font-size: 28px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #1f2937;
+  -fx-padding: 4 0 10 0;
+}
+
+.muted { -fx-text-fill: #6b7280; -fx-font-size: 14px; }
+
+/* ===========================
+   Buttons (JavaFX .button + utility .btn)
+   =========================== */
+/* الزر العام (Controls) */
+.button {
+  -fx-background-color: #4a90e2;
+  -fx-text-fill: white;
+  -fx-font-size: 14px;
+  -fx-background-radius: 10;
+  -fx-padding: 10 16;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 10, 0.2, 0, 2);
+}
+.button:hover   { -fx-background-color: #357abd; }
+.button:pressed { -fx-opacity: .95; }
+
+/* فئة أدوات مساعدة للأزرار المخصصة التي تستخدمها في FXML (btn ...) */
+.btn {
+  -fx-background-radius: 10;
+  -fx-padding: 10 16;
+  -fx-font-weight: 600;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 10, 0.2, 0, 2);
+  -fx-text-fill: white;
+  -fx-background-color: #4a90e2;
+}
+.btn:pressed { -fx-opacity: .95; }
+
+/* Variants */
+.btn-primary   { -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb); }
+.btn-primary:hover { -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6); }
+
+.btn-secondary {
+  -fx-background-color: #e5e7eb;
+  -fx-text-fill: #111827;
+}
+.btn-secondary:hover { -fx-background-color: #dfe3e8; }
+
+.btn-warning   { -fx-background-color: linear-gradient(to bottom, #f59e0b, #d97706); }
+.btn-danger    { -fx-background-color: linear-gradient(to bottom, #ef4444, #dc2626); }
+.btn-accent    { -fx-background-color: linear-gradient(to bottom, #10b981, #059669); }
+
+/* ===========================
+   Inputs / Forms
+   =========================== */
+/* بطاقات نماذج أنيقة */
+.form {
+  -fx-padding: 16;
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f8fafc);
+  -fx-border-color: #e5e7eb;
+  -fx-border-width: 1;
+  -fx-border-radius: 14;
+  -fx-background-radius: 14;
+}
+.form-card {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f8fafc);
+  -fx-background-radius: 14;
+  -fx-padding: 16;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,.06), 10, .25, 0, 2);
+  -fx-border-color: #e5e7eb;
+  -fx-border-radius: 14;
+}
+
+/* الحقول */
+.text-field, .password-field, .text-area,
+.choice-box, .combo-box-base, .date-picker {
+  -fx-background-color: white;
+  -fx-text-fill: #111827;
+  -fx-background-radius: 10;
+  -fx-border-color: #cfd8e3;
+  -fx-border-radius: 10;
+  -fx-padding: 10 12;
+  -fx-font-size: 13px;
+}
+.text-field:focused, .password-field:focused, .text-area:focused,
+.choice-box:focused, .combo-box-base:focused, .date-picker:focused {
+  -fx-border-color: #60a5fa;
+  -fx-effect: dropshadow(gaussian, rgba(96,165,250,0.25), 10, 0.2, 0, 1);
+}
+
+/* Popup القوائم */
+.list-cell, .list-view {
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #111827;
+}
+.list-cell:hover { -fx-background-color: #eef2ff; }
+
+/* DatePicker سهم أنيق */
+.date-picker .arrow-button { -fx-background-color: transparent; }
+.date-picker .arrow-button:hover { -fx-background-color: #eef2ff; }
+
+/* حالة خطأ اختيارية */
+.input-error {
+  -fx-border-color: #ef4444;
+  -fx-background-color: #fff7f7;
+}
+
+/* ===========================
+   Tables
+   =========================== */
+.table-view {
+  -fx-background-color: transparent;
+  -fx-border-color: #ddd;
+  -fx-border-width: 1px;
+  -fx-background-radius: 14;
+  -fx-padding: 8;
+}
+.table-view .column-header-background {
+  -fx-background-color: #f0f2f5;
+  -fx-background-radius: 14 14 0 0;
+}
+.table-view .column-header, .table-view .filler {
+  -fx-background-color: transparent;
+  -fx-font-weight: 700;
+  -fx-padding: 8 10;
+  -fx-border-color: transparent transparent #e5e7eb transparent;
+  -fx-border-width: 0 0 1 0;
+}
+.table-view .table-row-cell { -fx-background-color: transparent; }
+.table-view .table-row-cell:hover { -fx-background-color: #f9fafb; }
+.table-view .table-row-cell:filled:selected,
+.table-view:focused .table-row-cell:filled:selected {
+  -fx-background-color: #dbeafe;   /* أزرق لطيف للاختيار */
+}
+.table-view .table-cell { -fx-padding: 8 10; -fx-text-fill: #111827; }
+
+/* صندوق الجدول المرتفع الذي تستخدمه */
+.table-elevated {
+  -fx-background-color: white;
+  -fx-background-radius: 14;
+  -fx-padding: 8;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,.10), 18, .25, 0, 4);
+  -fx-background-insets: 0;
+}
+
+/* ===========================
+   Toolbars / Cards / Layout
+   =========================== */
+.actions { -fx-alignment: center; -fx-spacing: 12; -fx-padding: 8 0 0 0; }
+
+.topbar {
+  -fx-background-color: linear-gradient(to right, #ffffffcc, #ffffff77), #ffffff;
+  -fx-background-radius: 0 0 16 16;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.12), 12, 0.15, 0, 2);
+  -fx-padding: 12 18;
+}
+.brand  { -fx-font-size: 18px; -fx-font-weight: 800; -fx-text-fill: #1f2937; }
+.welcome{ -fx-font-size: 14px; -fx-text-fill: #64748b; -fx-font-weight: 600; }
+
+.sidebar {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 14;
+  -fx-padding: 16 14;
+  -fx-min-width: 220;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.08), 16, 0.18, 0, 2);
+}
+.menu-title { -fx-font-size: 13px; -fx-font-weight: 800; -fx-text-fill: #94a3b8; -fx-padding: 0 0 8 6; }
+.menu-btn {
+  -fx-background-color: linear-gradient(to bottom, #eff6ff, #dbeafe);
+  -fx-text-fill: #1d4ed8;
+  -fx-font-weight: 700;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(29,78,216,0.10), 8, 0.2, 0, 1);
+}
+.menu-btn:hover     { -fx-background-color: linear-gradient(to bottom, #e0ecff, #cfe2ff); }
+.menu-btn:pressed   { -fx-background-color: linear-gradient(to bottom, #cfe2ff, #b9d3ff); -fx-translate-y: 1px; }
+.menu-primary       { -fx-background-color: linear-gradient(to bottom, #dbeafe, #bfdbfe); -fx-text-fill: #1e40af; }
+.menu-danger        { -fx-background-color: linear-gradient(to bottom, #fee2e2, #fecaca); -fx-text-fill: #b91c1c; }
+.menu-danger:hover  { -fx-background-color: linear-gradient(to bottom, #fecaca, #fca5a5); }
+
+.content-card {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 16;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.08), 18, 0.22, 0, 3);
+  -fx-padding: 16;
+}
+
+/* شارة حالة بسيطة (لـ Overdue/Available) */
+.status-chip {
+  -fx-background-color: #eef2ff;
+  -fx-text-fill: #3730a3;
+  -fx-padding: 4 10;
+  -fx-background-radius: 999;
+  -fx-font-weight: 700;
+  -fx-font-size: 12px;
+}
+
+/* ===========================
+   Auth / Login (من كودك الأصلي مع Polish)
+   =========================== */
+.auth-root { -fx-background-color: linear-gradient(to bottom, #f6f8fc, #eef2f7); }
+.auth-card {
+  -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.90)), #ffffff;
+  -fx-background-radius: 20;
+  -fx-padding: 28 28 24 28;
+  -fx-max-width: 720;
+  -fx-min-width: 520;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.12), 18, 0.22, 0, 3);
+}
+
+/* ===========================
+   Dialogs / Progress
+   =========================== */
+.dialog-pane {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 16;
+  -fx-border-color: #e5e7eb;
+  -fx-border-radius: 16;
+}
+.dialog-pane .header-panel, .dialog-pane .content.label { -fx-text-fill: #1f2937; }
+.dialog-pane > *.button-bar > *.container > .button {
+  -fx-background-radius: 8;
+  -fx-background-color: #4a90e2;
+  -fx-text-fill: white;
+}
+
+.progress-indicator { -fx-padding: 0 8; }
+
+/* ===========================
+   Dark Theme (اختياري)
+   فعّل بإضافة styleClass="dark" على الجذر (app-root/screen)
+   =========================== */
+.dark, .app-root.dark, .screen.dark {
+  -fx-background-color: #0f172a;
+  -fx-text-fill: #e5e7eb;
+}
+.dark .title       { -fx-text-fill: #e5e7eb; }
+.dark .muted       { -fx-text-fill: #9ca3af; }
+.dark .form, .dark .form-card, .dark .content-card, .dark .table-elevated,
+.dark .sidebar, .dark .dialog-pane {
+  -fx-background-color: #111827;
+  -fx-border-color: #1f2937;
+}
+.dark .table-view  { -fx-border-color: #1f2937; }
+.dark .table-view .column-header-background { -fx-background-color: #0b1220; }
+.dark .table-view .table-row-cell:hover { -fx-background-color: rgba(255,255,255,0.05); }
+.dark .table-view .table-row-cell:filled:selected { -fx-background-color: rgba(79,70,229,0.35); }
+.dark .text-field, .dark .password-field, .dark .text-area,
+.dark .choice-box, .dark .combo-box-base, .dark .date-picker,
+.dark .list-view, .dark .list-cell {
+  -fx-background-color: #0b1220;
+  -fx-text-fill: #e5e7eb;
+  -fx-border-color: #293241;
+}
+.dark .menu-btn {
+  -fx-background-color: linear-gradient(to bottom, #182237, #141c2f);
+  -fx-text-fill: #93c5fd;
+}
+.dark .menu-btn:hover { -fx-background-color: linear-gradient(to bottom, #202b47, #1a243d); }
+.dark .button, .dark .btn { -fx-background-color: #4f46e5; }
+.dark .btn-secondary     { -fx-background-color: #374151; -fx-text-fill: #e5e7eb; }
+.dark .status-chip       { -fx-background-color: rgba(99,102,241,0.18); -fx-text-fill: #c7d2fe; }
+
+/* ===== Dashboard Stat Cards ===== */
+.stat-card {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f7fafc);
+  -fx-background-radius: 16;
+  -fx-padding: 14 18;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.10), 16, 0.22, 0, 2);
+  -fx-min-width: 180;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.stat-label {
+  -fx-text-fill: #64748b;
+  -fx-font-weight: 700;
+  -fx-font-size: 12px;
+}
+
+.stat-value {
+  -fx-text-fill: #0f172a;
+  -fx-font-weight: 900;
+  -fx-font-size: 28px;
+}

@@ -1,0 +1,334 @@
+
+
+/* General Styles */
+.root {
+    -fx-background-color: #f0f2f5;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #357abd;
+}
+
+/* Tables */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f0f2f5;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+}
+
+/* Forms */
+.form {
+    -fx-padding: 20px;
+    -fx-background-color: white;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+}
+
+.actions {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+/* ------- Login Page -----*/
+
+.auth-root {
+  /* خلفية ناعمة متدرجة */
+  -fx-background-color: linear-gradient(to bottom, #f6f8fc, #eef2f7);
+}
+
+/* البطاقة */
+.auth-card {
+  -fx-background-color:
+      /* طبقة زجاجية خفيفة */
+      linear-gradient(to bottom, rgba(255,255,255,0.92), rgba(255,255,255,0.88)),
+      #ffffff;
+  -fx-background-radius: 20;
+  -fx-padding: 28 28 24 28;
+  -fx-max-width: 720;
+  -fx-min-width: 520;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.12), 18, 0.22, 0, 3);
+}
+
+.title {
+  -fx-font-size: 28px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #1f2937;
+}
+
+/* شبكة الحقول */
+.form {
+  -fx-background-color: #f9fbff;
+  -fx-background-radius: 14;
+  -fx-padding: 16;
+  -fx-border-color: #e5e7eb;
+  -fx-border-radius: 14;
+}
+
+/* الحقول */
+.text-field, .password-field {
+  -fx-background-radius: 10;
+  -fx-background-color: white;
+  -fx-border-color: #cfd8e3;
+  -fx-border-radius: 10;
+  -fx-padding: 10 12;
+  -fx-font-size: 13px;
+}
+
+.text-field:focused, .password-field:focused {
+  -fx-border-color: #60a5fa;
+  -fx-effect: dropshadow(gaussian, rgba(96,165,250,0.25), 10, 0.2, 0, 1);
+}
+
+/* الأزرار */
+.btn {
+  -fx-background-radius: 10;
+  -fx-font-weight: 700;
+  -fx-padding: 10 16;
+  -fx-cursor: hand;
+}
+
+.btn-primary {
+  -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+  -fx-text-fill: white;
+}
+.btn-primary:hover {
+  -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6);
+}
+.btn-secondary {
+  -fx-background-color: linear-gradient(to bottom, #e5e7eb, #d1d5db);
+  -fx-text-fill: #111827;
+}
+.btn-secondary:hover {
+  -fx-background-color: linear-gradient(to bottom, #edeef1, #dfe3e8);
+}
+
+/* شريط الأزرار */
+.actions { -fx-padding: 6 0 0 0; }
+
+/* ستايل خطأ اختياري لو تحب تلوّن الحقل */
+.input-error {
+  -fx-border-color: #ef4444;
+  -fx-background-color: #fff7f7;
+}
+
+/*-------- Dashboard Layout -----*/
+
+.dashboard-root {
+  -fx-background-color: linear-gradient(to bottom, #f6f8fc, #eef2f7);
+}
+
+.topbar {
+  -fx-background-color: linear-gradient(to right, #ffffff99, #ffffff55), #ffffff;
+  -fx-background-radius: 0 0 16 16;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.12), 12, 0.15, 0, 2);
+}
+
+.brand {
+  -fx-font-size: 18px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #1f2937;
+}
+
+.welcome {
+  -fx-font-size: 14px;
+  -fx-text-fill: #64748b;
+  -fx-font-weight: 600;
+}
+
+.sidebar {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 14;
+  -fx-padding: 16 14 16 14;
+  -fx-min-width: 220;
+  -fx-max-width: 260;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.08), 16, 0.18, 0, 2);
+  -fx-translate-x: 16;
+  -fx-translate-y: 16;
+}
+
+.menu-title {
+  -fx-font-size: 13px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #94a3b8;
+  -fx-padding: 0 0 8 6;
+}
+
+.menu-btn {
+  -fx-background-color: linear-gradient(to bottom, #eff6ff, #dbeafe);
+  -fx-text-fill: #1d4ed8;
+  -fx-font-weight: 700;
+  -fx-background-radius: 10;
+  -fx-padding: 10 14;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(29,78,216,0.10), 8, 0.2, 0, 1);
+}
+
+.menu-btn:hover {
+  -fx-background-color: linear-gradient(to bottom, #e0ecff, #cfe2ff);
+}
+
+.menu-btn:pressed {
+  -fx-background-color: linear-gradient(to bottom, #cfe2ff, #b9d3ff);
+  -fx-translate-y: 1px;
+}
+
+
+/* زر مميز (Books افتراضياً) */
+.menu-primary {
+  -fx-background-color: linear-gradient(to bottom, #dbeafe, #bfdbfe);
+  -fx-text-fill: #1e40af;
+}
+
+/* زر تحذيري للخروج */
+.menu-danger {
+  -fx-background-color: linear-gradient(to bottom, #fee2e2, #fecaca);
+  -fx-text-fill: #b91c1c;
+}
+.menu-danger:hover { -fx-background-color: linear-gradient(to bottom, #fecaca, #fca5a5); }
+
+/* بطاقة المحتوى */
+.content-card {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 16;
+  -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.08), 18, 0.22, 0, 3);
+  -fx-margin: 16;
+  -fx-translate-y: 8;
+  -fx-translate-x: 8;
+}
+
+.muted {
+  -fx-text-fill: #6b7280;
+  -fx-font-size: 14px;
+}
+
+/* توازن المسافات مع الحواف */
+.dashboard-root > .center {
+  -fx-padding: 16 20 20 8;
+}
+
+/* ----- أزرار عامة (تتطابق مع بقية الشاشات) ----- */
+.btn {
+  -fx-background-radius: 10;
+  -fx-font-weight: 700;
+  -fx-padding: 10 16;
+  -fx-cursor: hand;
+}
+.btn-primary {
+  -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+  -fx-text-fill: white;
+}
+.btn-primary:hover {
+  -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6);
+}
+.btn-secondary {
+  -fx-background-color: linear-gradient(to bottom, #e5e7eb, #d1d5db);
+  -fx-text-fill: #111827;
+}
+
+/* شاشة عامة */
+.screen {
+  -fx-padding: 24;
+  -fx-background-color: linear-gradient(to bottom, #eef2f7, #f7fafc);
+}
+
+/* العنوان */
+.title {
+  -fx-font-size: 32px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #1f2937;
+  -fx-padding: 4 0 8 0;
+}
+
+/* جدول بظل خفيف */
+.table-elevated {
+  -fx-background-color: white;
+  -fx-background-radius: 14;
+  -fx-padding: 8;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,.10), 18, .25, 0, 4);
+}
+
+/* بطاقة النموذج */
+.form-card {
+  -fx-background-color: linear-gradient(to bottom, #ffffff, #f8fafc);
+  -fx-background-radius: 14;
+  -fx-padding: 16;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,.06), 10, .25, 0, 2);
+}
+
+/* صف أزرار */
+.actions { -fx-spacing: 12; -fx-alignment: center; }
+
+/* أزرار */
+.btn {
+  -fx-background-radius: 10;
+  -fx-padding: 10 16;
+  -fx-font-weight: 600;
+  -fx-cursor: hand;
+}
+.btn-primary {
+  -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+  -fx-text-fill: white;
+}
+.btn-primary:hover { -fx-opacity: .95; }
+.btn-warning {
+  -fx-background-color: linear-gradient(to bottom, #f59e0b, #d97706);
+  -fx-text-fill: white;
+}
+.btn-secondary {
+  -fx-background-color: #e5e7eb;
+  -fx-text-fill: #111827;
+}
+.btn:pressed { -fx-opacity: .9; }
+
+/* الحقول */
+.text-field, .choice-box {
+  -fx-background-radius: 10;
+}
+/* ===== Borrowing (تحسين حقول الفورم) ===== */
+.form .combo-box, .form .date-picker {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 12;
+  -fx-border-radius: 12;
+  -fx-border-color: rgba(0,0,0,0.08);
+  -fx-border-width: 1;
+  -fx-padding: 6 10;
+}
+
+.form .combo-box:focused, .form .date-picker:focused {
+  -fx-border-color: #4a90e2;
+  -fx-effect: dropshadow(three-pass-box, rgba(74,144,226,0.25), 8, 0, 0, 2);
+}
+
+
+/* خلوص أكبر بين الفورم والجدول */
+.table-elevated {
+  -fx-background-insets: 0;
+  -fx-background-radius: 14;
+}
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+
+<VBox alignment="TOP_CENTER" prefHeight="628.0" prefWidth="1012.0" spacing="16" styleClass="screen" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BooksController">
+
+  <stylesheets>
+    <URL value="@../css/style.css" />
+  </stylesheets>
+   <children>
+     <!-- العنوان -->
+     <Label styleClass="title" text="Books" />
+      <HBox alignment="CENTER" prefHeight="315.0" prefWidth="393.0">
+         <children>
+            <VBox prefHeight="315.0" prefWidth="870.0">
+               <children>
+                 <!-- جدول الكتب -->
+                 <TableView fx:id="booksTable" prefHeight="315.0" prefWidth="278.0" styleClass="table-elevated">
+                   <columns>
+                     <TableColumn fx:id="colId" prefWidth="90" text="ID" />
+                     <TableColumn fx:id="colTitle" prefWidth="143.0" text="Title" />
+                     <TableColumn fx:id="colAuthor" prefWidth="173.0" text="Author" />
+                     <TableColumn fx:id="colStatus" prefWidth="179.0" text="Status" />
+                   </columns>
+                 </TableView>
+               </children>
+            </VBox>
+
+            <VBox alignment="CENTER" prefHeight="315.0" prefWidth="597.0" spacing="50.0" style="-fx-border-color: #ccc; -fx-border-radius: 10;">
+               <children>
+                  <!-- نص البحث كما هو -->
+                  <TextField fx:id="searchTextField" maxHeight="-Infinity" maxWidth="-Infinity" promptText="Search By Title" />
+                  <!-- الـ ComboBox أصبح للـ Sort، فقط غيّرنا الـ prompt -->
+                  <ComboBox fx:id="searchComboBox" onAction="#searchComboBoxHandler" prefHeight="31.0" prefWidth="196.0" promptText="Sort by" style="-fx-background-color: #eee;" />
+                  <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchButtonHandler" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #ccc;" text="search" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+
+     <!-- بطاقة النموذج -->
+     <GridPane hgap="12" styleClass="form-card" vgap="12">
+       <columnConstraints>
+         <ColumnConstraints minWidth="90" />
+         <ColumnConstraints hgrow="ALWAYS" />
+         <ColumnConstraints minWidth="90" />
+         <ColumnConstraints hgrow="ALWAYS" />
+       </columnConstraints>
+
+       <children>
+         <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+         <TextField fx:id="titleField" promptText="e.g. Clean Code" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+         <Label text="Author:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+         <TextField fx:id="authorField" promptText="e.g. Robert Martin" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+         <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+         <ChoiceBox fx:id="statusBox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+           <items>
+             <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Available" />
+               <String fx:value="Borrowed" />
+             </FXCollections>
+           </items>
+         </ChoiceBox>
+       </children>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+     </GridPane>
+
+     <!-- أزرار -->
+     <HBox styleClass="actions">
+      <children>
+          <Button onAction="#handleAddBook" styleClass="btn btn-primary" text="Add" />
+          <Button onAction="#handleEditBook" styleClass="btn btn-warning" text="Edit Selected" />
+          <Separator orientation="VERTICAL" />
+          <Button onAction="#handleBack" styleClass="btn btn-secondary" text="Back" />
+      </children>
+     </HBox>
+   </children>
+</VBox>

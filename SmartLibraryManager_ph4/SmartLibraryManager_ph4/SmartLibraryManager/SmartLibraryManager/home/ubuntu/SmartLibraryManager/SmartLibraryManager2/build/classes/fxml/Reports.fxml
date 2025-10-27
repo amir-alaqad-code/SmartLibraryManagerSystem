@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ReportsController"
+      alignment="CENTER" prefHeight="720.0" prefWidth="900.0"
+      spacing="16" styleClass="app-root">
+
+    <stylesheets>
+        <URL value="@../css/style.css"/>
+    </stylesheets>
+
+    <children>
+
+        <!-- Topbar -->
+        <ToolBar>
+            <items>
+                <Label text="Reports &amp; Analytics" styleClass="title"/>
+                <Pane/>
+                <Label fx:id="statusLabel" text="Ready" styleClass="muted"/>
+                <ProgressIndicator fx:id="progress" visible="false" prefWidth="20" prefHeight="20"/>
+                <Button fx:id="btnBack" text="Back" onAction="#handleBack" styleClass="btn btn-secondary"/>
+            </items>
+        </ToolBar>
+
+        <!-- Filters Card -->
+        <HBox spacing="12" alignment="CENTER" styleClass="form-card">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+            <children>
+                <VBox spacing="6">
+                    <Label text="From"/>
+                    <DatePicker fx:id="dpFrom"/>
+                </VBox>
+                <VBox spacing="6">
+                    <Label text="To"/>
+                    <DatePicker fx:id="dpTo"/>
+                </VBox>
+                <VBox spacing="6">
+                    <Label text="Fine / day ($)"/>
+                    <TextField fx:id="tfFinePerDay" promptText="1.0" prefWidth="80"/>
+                </VBox>
+                <VBox spacing="6">
+                    <Label text="Search (member/book)"/>
+                    <TextField fx:id="tfSearch" promptText="e.g. Ahmed / Clean Code" prefWidth="220"/>
+                </VBox>
+                <VBox spacing="6" alignment="CENTER_LEFT">
+                    <Label text="Options"/>
+                    <CheckBox fx:id="chkActiveOnly" text="Active only"/>
+                </VBox>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <VBox spacing="6" alignment="CENTER_RIGHT">
+                    <Label text="Records"/>
+                    <Label fx:id="lblCount" text="0 records"/>
+                </VBox>
+                <VBox spacing="6" alignment="CENTER_RIGHT">
+                    <Label text="Total Fines"/>
+                    <Label fx:id="lblTotalFine" text="\$0.00"/>
+                </VBox>
+            </children>
+        </HBox>
+
+        <!-- Actions -->
+        <HBox spacing="12" alignment="CENTER" styleClass="actions">
+            <children>
+                <Button fx:id="btnGenerateReminders" text="Generate Reminders"
+                        onAction="#handleGenerateReminders" styleClass="btn btn-accent" prefWidth="200"/>
+                <Button fx:id="btnGenerateFines" text="Calculate Fines"
+                        onAction="#handleGenerateFines" styleClass="btn btn-primary" prefWidth="200"/>
+                <Separator orientation="VERTICAL"/>
+                <Button fx:id="btnCopy" text="Copy" onAction="#handleCopy" styleClass="btn"/>
+                <Button fx:id="btnSaveCsv" text="Save CSV" onAction="#handleSaveCsv" styleClass="btn"/>
+                <Separator orientation="VERTICAL"/>
+                <Button fx:id="btnCancel" text="Cancel" onAction="#handleCancel" styleClass="btn btn-danger"/>
+            </children>
+        </HBox>
+
+        <!-- Output -->
+        <TextArea fx:id="resultArea"
+                  prefHeight="520.0" prefWidth="860.0"
+                  wrapText="true" styleClass="content-card"/>
+    </children>
+
+    <padding>
+        <Insets top="16.0" right="16.0" bottom="16.0" left="16.0"/>
+    </padding>
+</VBox>

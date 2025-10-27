@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+  <persistence-unit name="SmartLibraryPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+    <!-- الكيانات -->
+    <class>entities.Book</class>
+    <class>entities.Member</class>
+    <class>entities.Borrowing</class>
+    <class>entities.User</class>
+
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+     <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/smart_library_manager?useSSL=false&amp;serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="aammeerr1020304050##"/>
+
+      <!-- يحدّث الجداول بدل ما يمسحها -->
+      <property name="javax.persistence.schema-generation.database.action" value="update"/>
+
+      <!-- اختياري: لعرض SQL في الـ console -->
+      <property name="eclipselink.logging.level.sql" value="FINE"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>

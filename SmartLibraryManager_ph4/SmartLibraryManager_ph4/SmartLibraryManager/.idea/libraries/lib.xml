@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/dist/lib/javafx.media.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,7 @@
+codien,Coding Keys,Borrowed,1004
+sssa,computer Network,Borrowed,1001
+Unknown,Computer Science,Borrowed,1001
+safe,How to become rich,Borrowed,1005
+amir,learn FullStack Web,Borrowed,1006
+pythonCamp,Learn Python,Borrowed,1002
+ramiro,Sports,Borrowed,1003

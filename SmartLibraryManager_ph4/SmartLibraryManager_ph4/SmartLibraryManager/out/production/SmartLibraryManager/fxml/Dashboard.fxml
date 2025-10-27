@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.DashboardController"
+            styleClass="dashboard-root">
+
+  <!-- ستايلشيت -->
+  <stylesheets>
+    <URL value="@../css/style.css"/>
+  </stylesheets>
+
+  <!-- شريط علوي -->
+  <top>
+    <HBox spacing="16" BorderPane.alignment="CENTER_LEFT" styleClass="topbar">
+      <children>
+        <Label text="Smart Library Manager" styleClass="brand"/>
+        <Pane HBox.hgrow="ALWAYS"/> <!-- Spacer -->
+        <Label fx:id="welcomeLabel" styleClass="welcome"/>
+      </children>
+      <padding><Insets top="14" right="20" bottom="14" left="20"/></padding>
+    </HBox>
+  </top>
+
+  <!-- الشريط الجانبي -->
+  <left>
+   <VBox spacing="12" styleClass="sidebar">
+    <Label text="Menu" styleClass="menu-title"/>
+
+    <Button text="Books"    onAction="#handleBooks"    styleClass="menu-btn"/>
+    <Button text="Members"  onAction="#handleMembers"  styleClass="menu-btn"/>
+    <Button text="Borrowing" onAction="#handleBorrowing" styleClass="menu-btn"/>
+    
+    <Separator/>
+    
+  <Button text="Logout" onAction="#handleLogout" styleClass="menu-btn menu-danger"/>
+
+</VBox>
+
+  </left>
+
+  <!-- المحتوى -->
+  <center>
+    <StackPane styleClass="content-card">
+      <children>
+        <Label text="Select a section from the left menu."
+               styleClass="muted"/>
+      </children>
+      <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+    </StackPane>
+  </center>
+
+</BorderPane>

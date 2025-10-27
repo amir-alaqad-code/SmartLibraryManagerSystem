@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.LoginController"
+      alignment="CENTER"
+      spacing="24"
+      styleClass="auth-root">
+
+  <stylesheets>
+    <URL value="@../css/style.css"/>
+  </stylesheets>
+
+  <!-- بطاقة الدخول -->
+  <VBox spacing="16" alignment="CENTER" styleClass="auth-card">
+    <Label text="Login" styleClass="title"/>
+
+    <GridPane hgap="12" vgap="12" styleClass="form">
+      <columnConstraints>
+        <ColumnConstraints minWidth="100"/>
+        <ColumnConstraints hgrow="ALWAYS" minWidth="320"/>
+      </columnConstraints>
+      <children>
+        <Label text="Email:"    GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="emailField"
+                   promptText="name@example.com"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField"
+                       promptText="••••••••"
+                       GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+      </children>
+    </GridPane>
+
+    <HBox spacing="12" alignment="CENTER" styleClass="actions">
+      <Button text="Login"        onAction="#handleLogin"      styleClass="btn btn-primary"/>
+      <Button text="Go to Sign Up" onAction="#handleGoToSignUp" styleClass="btn btn-secondary"/>
+    </HBox>
+  </VBox>
+
+  <!-- حافة داخلية حول البطاقة -->
+  <padding><Insets top="40" right="24" bottom="40" left="24"/></padding>
+</VBox>
