@@ -19,22 +19,19 @@ This project uses **MySQL** as the main database and follows a clean MVC archite
 
 ## 🏗️ Project Structure
 
-SmartLibraryManager_Ph5/
-│
-├── phase 4/
-│ └── SmartLibraryManager_ph4/
-│ ├── controllers/ # UI logic controllers (Books, Members, etc.)
-│ ├── entities/ # Data model classes (Book, Member, Borrowing, User)
-│ ├── fxml/ # JavaFX FXML layout files
-│ ├── css/ # Application stylesheets
-│ ├── data/ # Local text file backups
-│ ├── utils/ # Helper and utility classes
-│ ├── create_Connection_Statement/
-│ │ └── CreateConnection.java # MySQL connection setup
-│ ├── SmartLibraryManager.sql # Database schema
-│ └── SmartLibraryManager.iml # IntelliJ project module
-│
-└── README.md
+- 📁 **phase 4/**
+  - 📦 **SmartLibraryManager_ph4/**
+    - 🧩 **controllers/** — UI logic controllers (Books, Members, etc.)
+    - 🧠 **entities/** — Data model classes (Book, Member, Borrowing, User)
+    - 🖼️ **fxml/** — JavaFX FXML layout files
+    - 🎨 **css/** — Application stylesheets
+    - 💾 **data/** — Local text file backups
+    - 🧰 **utils/** — Helper and utility classes
+    - 🔗 **create_Connection_Statement/**
+      - ⚙️ **CreateConnection.java** — MySQL connection setup
+    - 🗄️ **SmartLibraryManager.sql** — Database schema
+    - 🧱 **SmartLibraryManager.iml** — IntelliJ project module
+- 📘 **README.md**
 
 
 ---
@@ -82,24 +79,18 @@ SmartLibraryManager_Ph5/
 
 ## 🧠 Future Enhancements
 
-🌐 REST API integration for remote access
-
-☁️ Cloud synchronization for database
-
-🔔 Late return notifications
-
-📈 Detailed analytics and reports
-
-🧭 Role-based access (Admin/User)
-
-🌓 Dark & Light mode themes
+- 🌐 REST API integration for remote access
+- ☁️ Cloud synchronization for database
+- 🔔 Late return notifications
+- 📈 Detailed analytics and reports
+- 🧭 Role-based access (Admin/User)
+- 🌓 Dark & Light mode themes
  
 
 
 ## 👨‍💻 Developer
 
-[AMIR N. H. ALAQAD]
-📧 akkadameer@gmail.com
+- [AMIR N. H. ALAQAD](mailto:akkadameer@gmail.com)
 
 ## Mentor
-Eng.[Othman Shbeir](https://othman-shbeir.github.io/)
+- Eng.[Othman Shbeir](https://othman-shbeir.github.io/)
