@@ -90,7 +90,7 @@ This project uses **MySQL** as the main database and follows a clean MVC archite
 
 ## 👨‍💻 Developer
 
-- [AMIR N. H. ALAQAD](mailto:akkadameer@gmail.com)
+- [Dev.AMIR N. H. ALAQAD](mailto:akkadameer@gmail.com){:target="\_blank"}
 
 ## Mentor
-- Eng.[Othman Shbeir](https://othman-shbeir.github.io/)
+- [Eng.Othman Shbeir](https://othman-shbeir.github.io/){:target="\_blank"}
