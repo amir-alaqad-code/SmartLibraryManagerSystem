@@ -1,0 +1,528 @@
+Buildfile: /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/build.xml
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-init-modules-supported:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-modulename:
+
+-init-source-module-properties:
+[loadresource] module-info.java doesn't exist
+
+-init-macrodef-javac-with-module:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-test-impl:
+
+-init-macrodef-junit-init:
+
+-init-test-properties:
+
+-init-macrodef-junit-prototype-with-module:
+
+-init-macrodef-junit-prototype-without-module:
+
+-init-macrodef-junit-single:
+
+-init-macrodef-junit-batch:
+
+-init-macrodef-junit:
+
+-init-macrodef-junit-impl:
+
+-init-macrodef-testng:
+
+-init-macrodef-testng-impl:
+
+-init-macrodef-test:
+
+-init-macrodef-junit-debug-impl:
+
+-init-macrodef-test-debug-junit:
+
+-init-macrodef-testng-debug:
+
+-init-macrodef-testng-debug-impl:
+
+-init-macrodef-test-debug-testng:
+
+-init-macrodef-test-debug:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java-with-module:
+
+-init-macrodef-java-with-unnamed-module:
+
+-init-macrodef-java-without-module:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+   [delete] Deleting: /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/build/built-jar.properties
+
+deps-jar:
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/build/built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [javac] Compiling 17 source files to /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/build/classes
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/JPA_models/JPAUtil.java:3: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/JPA_models/JPAUtil.java:4: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/JPA_models/JPAUtil.java:5: error: package javax.persistence does not exist
+    [javac] import javax.persistence.Persistence;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/JPA_models/JPAUtil.java:9: error: cannot find symbol
+    [javac]     private static final EntityManagerFactory emf =
+    [javac]                          ^
+    [javac]   symbol:   class EntityManagerFactory
+    [javac]   location: class JPAUtil
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/JPA_models/JPAUtil.java:14: error: cannot find symbol
+    [javac]     public static EntityManager getEM() {
+    [javac]                   ^
+    [javac]   symbol:   class EntityManager
+    [javac]   location: class JPAUtil
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:5: error: package javafx.application does not exist
+    [javac] import javafx.application.Platform;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:6: error: package javafx.collections does not exist
+    [javac] import javafx.collections.FXCollections;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:7: error: package javafx.collections does not exist
+    [javac] import javafx.collections.ObservableList;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:8: error: package javafx.concurrent does not exist
+    [javac] import javafx.concurrent.Task;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:9: error: package javafx.event does not exist
+    [javac] import javafx.event.ActionEvent;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:10: error: package javafx.fxml does not exist
+    [javac] import javafx.fxml.FXML;
+    [javac]                   ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:11: error: package javafx.fxml does not exist
+    [javac] import javafx.fxml.FXMLLoader;
+    [javac]                   ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:12: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Node;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:13: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Parent;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:14: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Scene;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:16: error: package javafx.scene.control.cell does not exist
+    [javac] import javafx.scene.control.cell.PropertyValueFactory;
+    [javac]                                 ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:17: error: package javafx.stage does not exist
+    [javac] import javafx.stage.Stage;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:20: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:21: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:22: error: package javax.persistence does not exist
+    [javac] import javax.persistence.TypedQuery;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:31: error: cannot find symbol
+    [javac]     @FXML private TableView<Book> booksTable;
+    [javac]                   ^
+    [javac]   symbol:   class TableView
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Book.java:6: error: cannot find symbol
+    [javac] @Entity
+    [javac]  ^
+    [javac]   symbol: class Entity
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Book.java:7: error: cannot find symbol
+    [javac] @Table(name = "books") // اسم الجدول في الـ DB
+    [javac]  ^
+    [javac]   symbol: class Table
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:32: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Book, Integer> colId;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:33: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Book, String> colTitle;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:34: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Book, String> colAuthor;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:35: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Book, String> colStatus;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:38: error: cannot find symbol
+    [javac]     @FXML private TextField titleField;
+    [javac]                   ^
+    [javac]   symbol:   class TextField
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:39: error: cannot find symbol
+    [javac]     @FXML private TextField authorField;
+    [javac]                   ^
+    [javac]   symbol:   class TextField
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:40: error: cannot find symbol
+    [javac]     @FXML private ChoiceBox<String> statusBox;
+    [javac]                   ^
+    [javac]   symbol:   class ChoiceBox
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:43: error: cannot find symbol
+    [javac]     @FXML private ComboBox<String> searchComboBox;   // Title / Author
+    [javac]                   ^
+    [javac]   symbol:   class ComboBox
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:44: error: cannot find symbol
+    [javac]     @FXML private TextField searchTextField;         // نص البحث
+    [javac]                   ^
+    [javac]   symbol:   class TextField
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:45: error: cannot find symbol
+    [javac]     @FXML private ComboBox<String> cbFilterStatus;   // All / Available / Borrowed
+    [javac]                   ^
+    [javac]   symbol:   class ComboBox
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:46: error: cannot find symbol
+    [javac]     @FXML private Button searchButton;
+    [javac]                   ^
+    [javac]   symbol:   class Button
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:49: error: cannot find symbol
+    [javac]     @FXML private Button btnRefresh;
+    [javac]                   ^
+    [javac]   symbol:   class Button
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:50: error: cannot find symbol
+    [javac]     @FXML private Button btnCancel;
+    [javac]                   ^
+    [javac]   symbol:   class Button
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:51: error: cannot find symbol
+    [javac]     @FXML private ProgressIndicator progress;
+    [javac]                   ^
+    [javac]   symbol:   class ProgressIndicator
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:52: error: cannot find symbol
+    [javac]     @FXML private Label statusLabel;
+    [javac]                   ^
+    [javac]   symbol:   class Label
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:53: error: cannot find symbol
+    [javac]     @FXML private Label lblCount;
+    [javac]                   ^
+    [javac]   symbol:   class Label
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:55: error: cannot find symbol
+    [javac]     private final ObservableList<Book> bookList = FXCollections.observableArrayList();
+    [javac]                   ^
+    [javac]   symbol:   class ObservableList
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:56: error: cannot find symbol
+    [javac]     private EntityManagerFactory emf;
+    [javac]             ^
+    [javac]   symbol:   class EntityManagerFactory
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BookRepository.java:4: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BookRepository.java:5: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BookRepository.java:6: error: package javax.persistence does not exist
+    [javac] import javax.persistence.TypedQuery;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:58: error: cannot find symbol
+    [javac]     private Task<?> currentTask;
+    [javac]             ^
+    [javac]   symbol:   class Task
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:158: error: package Alert does not exist
+    [javac]     private void alert(Alert.AlertType type, String title, String msg) {
+    [javac]                             ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:274: error: cannot find symbol
+    [javac]     void searchButtonHandler(ActionEvent event) {
+    [javac]                              ^
+    [javac]   symbol:   class ActionEvent
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:301: error: cannot find symbol
+    [javac]     void searchComboBoxHandler(ActionEvent event) {
+    [javac]                                ^
+    [javac]   symbol:   class ActionEvent
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:314: error: cannot find symbol
+    [javac]     private void handleBack(ActionEvent e) throws Exception {
+    [javac]                             ^
+    [javac]   symbol:   class ActionEvent
+    [javac]   location: class BooksController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BookRepository.java:10: error: cannot find symbol
+    [javac]     private final EntityManagerFactory emf;
+    [javac]                   ^
+    [javac]   symbol:   class EntityManagerFactory
+    [javac]   location: class BookRepository
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BookRepository.java:11: error: cannot find symbol
+    [javac]     public BookRepository(EntityManagerFactory emf) { this.emf = emf; }
+    [javac]                           ^
+    [javac]   symbol:   class EntityManagerFactory
+    [javac]   location: class BookRepository
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Borrowing.java:7: error: cannot find symbol
+    [javac] @Entity
+    [javac]  ^
+    [javac]   symbol: class Entity
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Borrowing.java:8: error: cannot find symbol
+    [javac] @Table(name = "borrowings")
+    [javac]  ^
+    [javac]   symbol: class Table
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Member.java:6: error: cannot find symbol
+    [javac] @Entity
+    [javac]  ^
+    [javac]   symbol: class Entity
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Member.java:7: error: cannot find symbol
+    [javac] @Table(name = "members")
+    [javac]  ^
+    [javac]   symbol: class Table
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BooksController.java:15: error: package javafx.scene.control does not exist
+    [javac] import javafx.scene.control.*;
+    [javac] ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Book.java:3: error: package javax.persistence does not exist
+    [javac] import javax.persistence.*;
+    [javac] ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Borrowing.java:4: error: package javax.persistence does not exist
+    [javac] import javax.persistence.*;
+    [javac] ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/entities/Member.java:3: error: package javax.persistence does not exist
+    [javac] import javax.persistence.*;
+    [javac] ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:8: error: package javafx.application does not exist
+    [javac] import javafx.application.Platform;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:9: error: package javafx.beans.property does not exist
+    [javac] import javafx.beans.property.SimpleStringProperty;
+    [javac]                             ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:10: error: package javafx.collections does not exist
+    [javac] import javafx.collections.FXCollections;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:11: error: package javafx.collections does not exist
+    [javac] import javafx.collections.ObservableList;
+    [javac]                          ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:12: error: package javafx.concurrent does not exist
+    [javac] import javafx.concurrent.Task;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:13: error: package javafx.event does not exist
+    [javac] import javafx.event.ActionEvent;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:14: error: package javafx.fxml does not exist
+    [javac] import javafx.fxml.FXML;
+    [javac]                   ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:15: error: package javafx.fxml does not exist
+    [javac] import javafx.fxml.FXMLLoader;
+    [javac]                   ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:16: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Node;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:17: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Parent;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:18: error: package javafx.scene does not exist
+    [javac] import javafx.scene.Scene;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:20: error: package javafx.scene.control.cell does not exist
+    [javac] import javafx.scene.control.cell.PropertyValueFactory;
+    [javac]                                 ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:21: error: package javafx.stage does not exist
+    [javac] import javafx.stage.Stage;
+    [javac]                    ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:27: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:28: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:44: error: cannot find symbol
+    [javac]     @FXML private ComboBox<Book>   bookBox;
+    [javac]                   ^
+    [javac]   symbol:   class ComboBox
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:45: error: cannot find symbol
+    [javac]     @FXML private ComboBox<Member> memberBox;
+    [javac]                   ^
+    [javac]   symbol:   class ComboBox
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:46: error: cannot find symbol
+    [javac]     @FXML private DatePicker       borrowDate;
+    [javac]                   ^
+    [javac]   symbol:   class DatePicker
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:49: error: cannot find symbol
+    [javac]     @FXML private TextField        searchTextField;
+    [javac]                   ^
+    [javac]   symbol:   class TextField
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:50: error: cannot find symbol
+    [javac]     @FXML private ComboBox<String> searchComboBox;
+    [javac]                   ^
+    [javac]   symbol:   class ComboBox
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:51: error: cannot find symbol
+    [javac]     @FXML private DatePicker       searchDatePicker;
+    [javac]                   ^
+    [javac]   symbol:   class DatePicker
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:52: error: cannot find symbol
+    [javac]     @FXML private Button           searchButton;
+    [javac]                   ^
+    [javac]   symbol:   class Button
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:55: error: cannot find symbol
+    [javac]     @FXML private TableView<Borrowing>              borrowsTable;
+    [javac]                   ^
+    [javac]   symbol:   class TableView
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:56: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Borrowing, Integer>   colId;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:57: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Borrowing, String>    colBook;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:58: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Borrowing, String>    colMember;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:59: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Borrowing, LocalDate> colBorrowDate;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:60: error: cannot find symbol
+    [javac]     @FXML private TableColumn<Borrowing, LocalDate> colReturnDate;
+    [javac]                   ^
+    [javac]   symbol:   class TableColumn
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:63: error: cannot find symbol
+    [javac]     @FXML private Button            btnCancel;     // اختياري
+    [javac]                   ^
+    [javac]   symbol:   class Button
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:64: error: cannot find symbol
+    [javac]     @FXML private ProgressIndicator progress;      // اختياري
+    [javac]                   ^
+    [javac]   symbol:   class ProgressIndicator
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:65: error: cannot find symbol
+    [javac]     @FXML private Label             statusLabel;   // اختياري
+    [javac]                   ^
+    [javac]   symbol:   class Label
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:66: error: cannot find symbol
+    [javac]     @FXML private Label             lblCount;      // عدّاد نتائج
+    [javac]                   ^
+    [javac]   symbol:   class Label
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:69: error: cannot find symbol
+    [javac]     private final ObservableList<Borrowing> data = FXCollections.observableArrayList();
+    [javac]                   ^
+    [javac]   symbol:   class ObservableList
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:70: error: cannot find symbol
+    [javac]     private final ObservableList<Book>   availableBooks = FXCollections.observableArrayList();
+    [javac]                   ^
+    [javac]   symbol:   class ObservableList
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:71: error: cannot find symbol
+    [javac]     private final ObservableList<Member> allMembers     = FXCollections.observableArrayList();
+    [javac]                   ^
+    [javac]   symbol:   class ObservableList
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/controllers/BorrowingController.java:73: error: cannot find symbol
+    [javac]     private EntityManagerFactory emf;
+    [javac]             ^
+    [javac]   symbol:   class EntityManagerFactory
+    [javac]   location: class BorrowingController
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/MemberRepository.java:5: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/MemberRepository.java:6: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/MemberRepository.java:7: error: package javax.persistence does not exist
+    [javac] import javax.persistence.TypedQuery;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BorrowingRepository.java:5: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManager;
+    [javac]                         ^
+    [javac] /home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/src/repositories/BorrowingRepository.java:6: error: package javax.persistence does not exist
+    [javac] import javax.persistence.EntityManagerFactory;
+    [javac]                         ^
+    [javac] Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+    [javac] 100 errors
+    [javac] only showing the first 100 errors, of 644 total; use -Xmaxerrs if you would like to see more
+
+BUILD FAILED
+/home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/nbproject/build-impl.xml:1096: The following error occurred while executing this line:
+/home/ubuntu/os-assignment2/SmartLibraryManagerSystem/SmartLibraryManager_ph4/SmartLibraryManager_ph4/SmartLibraryManager/SmartLibraryManager/home/ubuntu/SmartLibraryManager/SmartLibraryManager2/nbproject/build-impl.xml:346: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
