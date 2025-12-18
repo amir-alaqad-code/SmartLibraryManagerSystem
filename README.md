@@ -35,6 +35,13 @@ This project uses **MySQL** as the main database and follows a clean MVC archite
 
 
 ---
+🐳 Docker Demo (Java Application)
+
+This project includes a simple Docker demo that shows how to containerize and run a Java application using Docker.
+
+📂 Docker Demo Structure
+
+---
 
 
 ## 🧩 Technologies Used
